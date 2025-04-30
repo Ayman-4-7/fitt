@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function SupplementsPage() {
   return (
     <div className="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
@@ -12,7 +14,6 @@ export default function SupplementsPage() {
           </p>
         </div>
 
-      
         <div className="flex flex-wrap justify-center gap-8">
           {/* Supplement 1 */}
           <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 w-full sm:w-[calc(50%-16px)] lg:w-[calc(33.333%-22px)]">
@@ -22,16 +23,21 @@ export default function SupplementsPage() {
                 alt="Premium Whey Protein"
                 className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
               />
-           
             </div>
             <div className="p-6">
-              <h3 className="text-xl font-bold text-gray-900">Premium Whey Protein</h3>
-              <p className="mt-2 text-gray-600">High-quality protein for muscle recovery and growth</p>
+              <h3 className="text-xl font-bold text-gray-900">
+                Premium Whey Protein
+              </h3>
+              <p className="mt-2 text-gray-600">
+                High-quality protein for muscle recovery and growth
+              </p>
               <div className="mt-4 flex items-center justify-between">
                 <span className="text-2xl font-bold text-blue-600">$49.99</span>
-                <button className="rounded-md bg-blue-600 px-6 py-2 font-bold text-white shadow-md hover:bg-blue-700">
-                  Buy Now
-                </button>
+                <Link to="/payment?product=Premium%20Whey%20Protein&price=49.99">
+                  <button className="rounded-md bg-blue-600 px-6 py-2 font-bold text-white shadow-md hover:bg-blue-700">
+                    Buy Now
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -44,16 +50,21 @@ export default function SupplementsPage() {
                 alt="Pre-Workout Energy"
                 className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
               />
-             
             </div>
             <div className="p-6">
-              <h3 className="text-xl font-bold text-gray-900">Pre-Workout Energy</h3>
-              <p className="mt-2 text-gray-600">Boost your energy and focus for intense workouts</p>
+              <h3 className="text-xl font-bold text-gray-900">
+                Pre-Workout Energy
+              </h3>
+              <p className="mt-2 text-gray-600">
+                Boost your energy and focus for intense workouts
+              </p>
               <div className="mt-4 flex items-center justify-between">
                 <span className="text-2xl font-bold text-blue-600">$39.99</span>
-                <button className="rounded-md bg-blue-600 px-6 py-2 font-bold text-white shadow-md hover:bg-blue-700">
-                  Buy Now
-                </button>
+                <Link to="/payment?product=Pre-Workout%20Energy&price=39.99">
+                  <button className="rounded-md bg-blue-600 px-6 py-2 font-bold text-white shadow-md hover:bg-blue-700">
+                    Buy Now
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -66,16 +77,19 @@ export default function SupplementsPage() {
                 alt="BCAA Complex"
                 className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
               />
-              
             </div>
             <div className="p-6">
               <h3 className="text-xl font-bold text-gray-900">BCAA Complex</h3>
-              <p className="mt-2 text-gray-600">Essential amino acids for muscle preservation and recovery</p>
+              <p className="mt-2 text-gray-600">
+                Essential amino acids for muscle preservation and recovery
+              </p>
               <div className="mt-4 flex items-center justify-between">
                 <span className="text-2xl font-bold text-blue-600">$34.99</span>
-                <button className="rounded-md bg-blue-600 px-6 py-2 font-bold text-white shadow-md hover:bg-blue-700">
-                  Buy Now
-                </button>
+                <Link to="/payment?product=BCAA%20Complex&price=34.99">
+                  <button className="rounded-md bg-blue-600 px-6 py-2 font-bold text-white shadow-md hover:bg-blue-700">
+                    Buy Now
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -88,16 +102,22 @@ export default function SupplementsPage() {
                 alt="Creatine Monohydrate"
                 className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
               />
-              
             </div>
             <div className="p-6">
-              <h3 className="text-xl font-bold text-gray-900">Creatine Monohydrate</h3>
-              <p className="mt-2 text-gray-600">Increase strength and power output during high-intensity training</p>
+              <h3 className="text-xl font-bold text-gray-900">
+                Creatine Monohydrate
+              </h3>
+              <p className="mt-2 text-gray-600">
+                Increase strength and power output during high-intensity
+                training
+              </p>
               <div className="mt-4 flex items-center justify-between">
                 <span className="text-2xl font-bold text-blue-600">$29.99</span>
-                <button className="rounded-md bg-blue-600 px-6 py-2 font-bold text-white shadow-md hover:bg-blue-700">
-                  Buy Now
-                </button>
+                <Link to="/payment?product=Creatine%20Monohydrate&price=29.99">
+                  <button className="rounded-md bg-blue-600 px-6 py-2 font-bold text-white shadow-md hover:bg-blue-700">
+                    Buy Now
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -110,16 +130,19 @@ export default function SupplementsPage() {
                 alt="Mass Gainer"
                 className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
               />
-              
             </div>
             <div className="p-6">
               <h3 className="text-xl font-bold text-gray-900">Mass Gainer</h3>
-              <p className="mt-2 text-gray-600">High-calorie formula for building muscle mass</p>
+              <p className="mt-2 text-gray-600">
+                High-calorie formula for building muscle mass
+              </p>
               <div className="mt-4 flex items-center justify-between">
                 <span className="text-2xl font-bold text-blue-600">$54.99</span>
-                <button className="rounded-md bg-blue-600 px-6 py-2 font-bold text-white shadow-md hover:bg-blue-700">
-                  Buy Now
-                </button>
+                <Link to="/payment?product=Mass%20Gainer&price=54.99">
+                  <button className="rounded-md bg-blue-600 px-6 py-2 font-bold text-white shadow-md hover:bg-blue-700">
+                    Buy Now
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -132,16 +155,21 @@ export default function SupplementsPage() {
                 alt="Multivitamin Complex"
                 className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
               />
-              
             </div>
             <div className="p-6">
-              <h3 className="text-xl font-bold text-gray-900">Multivitamin Complex</h3>
-              <p className="mt-2 text-gray-600">Complete daily vitamin and mineral support</p>
+              <h3 className="text-xl font-bold text-gray-900">
+                Multivitamin Complex
+              </h3>
+              <p className="mt-2 text-gray-600">
+                Complete daily vitamin and mineral support
+              </p>
               <div className="mt-4 flex items-center justify-between">
                 <span className="text-2xl font-bold text-blue-600">$24.99</span>
-                <button className="rounded-md bg-blue-600 px-6 py-2 font-bold text-white shadow-md hover:bg-blue-700">
-                  Buy Now
-                </button>
+                <Link to="/payment?product=Multivitamin%20Complex&price=24.99">
+                  <button className="rounded-md bg-blue-600 px-6 py-2 font-bold text-white shadow-md hover:bg-blue-700">
+                    Buy Now
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -149,24 +177,36 @@ export default function SupplementsPage() {
 
         {/* Additional Information */}
         <div className="mt-20 text-center">
-          <h2 className="text-2xl font-bold text-gray-900">Why Choose Our Supplements?</h2>
+          <h2 className="text-2xl font-bold text-gray-900">
+            Why Choose Our Supplements?
+          </h2>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <div className="bg-white p-6 rounded-lg shadow-sm w-full sm:w-[calc(50%-8px)] lg:w-[calc(33.333%-11px)]">
-              <h3 className="text-lg font-medium text-gray-900">Premium Quality</h3>
-              <p className="mt-2 text-gray-500">All our supplements are made with the highest quality ingredients</p>
+              <h3 className="text-lg font-medium text-gray-900">
+                Premium Quality
+              </h3>
+              <p className="mt-2 text-gray-500">
+                All our supplements are made with the highest quality
+                ingredients
+              </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm w-full sm:w-[calc(50%-8px)] lg:w-[calc(33.333%-11px)]">
               <h3 className="text-lg font-medium text-gray-900">Lab Tested</h3>
-              <p className="mt-2 text-gray-500">Every batch is tested for purity and potency</p>
+              <p className="mt-2 text-gray-500">
+                Every batch is tested for purity and potency
+              </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm w-full sm:w-[calc(50%-8px)] lg:w-[calc(33.333%-11px)]">
-              <h3 className="text-lg font-medium text-gray-900">Expert Formulated</h3>
-              <p className="mt-2 text-gray-500">Developed by nutrition and fitness experts</p>
+              <h3 className="text-lg font-medium text-gray-900">
+                Expert Formulated
+              </h3>
+              <p className="mt-2 text-gray-500">
+                Developed by nutrition and fitness experts
+              </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
-

@@ -16,6 +16,7 @@ import EditExercise from "./pages/EditExercise";
 import Dashboard from "./pages/Dashboard";
 import Supplements from "./pages/Supplements";
 import Membership from "./pages/Membership";
+import Payment from "./pages/payment";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/supplements" element={<Supplements />} />
             <Route path="/membership" element={<Membership />} />
+            <Route path="/Payment" element={<Payment />} />
           </Routes>
         </main>
         <Footer />
