@@ -17,7 +17,7 @@ import Dashboard from "./pages/Dashboard";
 import Supplements from "./pages/Supplements";
 import Membership from "./pages/Membership";
 import Payment from "./pages/payment";
-
+import Signup from "./pages/Signup";
 function App() {
   return (
     <Router>
@@ -41,6 +41,7 @@ function App() {
             <Route path="/supplements" element={<Supplements />} />
             <Route path="/membership" element={<Membership />} />
             <Route path="/Payment" element={<Payment />} />
+            <Route path="/signup" element={<Signup />} />
           </Routes>
         </main>
         <Footer />
